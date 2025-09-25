@@ -77,7 +77,7 @@ br.com.tonypool
 ## 📚 Documentação
 
 - Swagger disponível em:  
-  `http://localhost:8080/swagger-ui/index.html`
+  http://localhost:8080/swagger-ui/index.html
 
 ---
 

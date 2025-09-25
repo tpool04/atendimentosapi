@@ -20,7 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfiguration {
 
 	@Bean
-	public Docket api() {
+	protected  Docket api() {
 		
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
@@ -35,10 +35,10 @@ public class SwaggerConfiguration {
 				"API para controle de atendimentos", 
 				"Sistema Spring Boot API / Hibernate JPA",
 				"Versão 1.0",
-				"http://www.cotiinformatica.com.br",
-				new Contact("COTI Informática", "http://www.cotiinformatica.com.br", "contato@cotiinformatica.com.br"),
+				null,
+				new Contact("Tony Pool", null, "tony.pool.04@gmail.com"),
 				"Licença da API",
-				"http://www.cotiinformatica.com.br",
+				null,
 				Collections.emptyList()
 				);
 	}

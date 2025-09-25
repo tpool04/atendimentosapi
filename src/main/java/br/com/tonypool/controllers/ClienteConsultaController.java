@@ -24,14 +24,15 @@ public class ClienteConsultaController {
     @Autowired
     private IEnderecoRepository enderecoRepository;
 
-    // Consulta protegida: retorna dados do cliente logado
+    // Endpoint autenticado: retorna dados do cliente autenticado
     @GetMapping("/me")
-    public ResponseEntity<ClienteCompletoDTO> consultarMeusDados(@RequestHeader("Authorization") String authHeader) {
+    public ResponseEntity<ClienteCompletoDTO> consultarMeusDados(@RequestHeader("Authorization") String authorization) {
         try {
-            String cpf = TokenSecurity.getUserFromToken(authHeader.replace("Bearer ", ""));
+            String token = authorization.replace("Bearer ", "");
+            String cpf = TokenSecurity.getUserFromToken(token);
             Cliente cliente = clienteRepository.findByCpf(cpf);
             if (cliente == null) {
-                return ResponseEntity.status(401).build();
+                return ResponseEntity.status(404).build();
             }
             Endereco endereco = enderecoRepository.findByCliente(cliente);
             ClienteDTO clienteDTO = new ClienteDTO(
@@ -54,21 +55,22 @@ public class ClienteConsultaController {
             ClienteCompletoDTO resposta = new ClienteCompletoDTO(clienteDTO, enderecoDTO);
             return ResponseEntity.ok(resposta);
         } catch (Exception e) {
-            return ResponseEntity.status(401).build();
+            return ResponseEntity.status(500).build();
         }
     }
 
-    // Atualização protegida: altera dados do cliente logado
+    // Endpoint autenticado: atualiza dados do cliente autenticado
     @PutMapping("/me")
     public ResponseEntity<String> atualizarMeusDados(
-        @RequestHeader("Authorization") String authHeader,
+        @RequestHeader("Authorization") String authorization,
         @RequestBody AtualizarClienteRequest request
     ) {
         try {
-            String cpf = TokenSecurity.getUserFromToken(authHeader.replace("Bearer ", ""));
+            String token = authorization.replace("Bearer ", "");
+            String cpf = TokenSecurity.getUserFromToken(token);
             Cliente cliente = clienteRepository.findByCpf(cpf);
             if (cliente == null) {
-                return ResponseEntity.status(401).body("Cliente não encontrado.");
+                return ResponseEntity.status(404).body("Cliente não encontrado.");
             }
             cliente.setNome(request.getNome());
             cliente.setEmail(request.getEmail());
@@ -87,7 +89,7 @@ public class ClienteConsultaController {
             }
             return ResponseEntity.ok("Dados atualizados com sucesso.");
         } catch (Exception e) {
-            return ResponseEntity.status(401).body("Token inválido ou expirado.");
+            return ResponseEntity.status(500).body("Erro ao atualizar dados.");
         }
     }
 }

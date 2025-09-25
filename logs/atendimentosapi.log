@@ -1,0 +1,137 @@
+2025-09-25 10:33:35.577  INFO 22172 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 11.0.10 on DESKTOP-HLR4AN3 with PID 22172 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-09-25 10:33:35.597  INFO 22172 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-25 10:33:36.913  INFO 22172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25 10:33:37.021  INFO 22172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 6 JPA repository interfaces.
+2025-09-25 10:33:37.792  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-25 10:33:37.815  INFO 22172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25 10:33:37.815  INFO 22172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-09-25 10:33:37.997  INFO 22172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-25 10:33:37.997  INFO 22172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2291 ms
+2025-09-25 10:33:38.293  INFO 22172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25 10:33:38.392  INFO 22172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-09-25 10:33:38.690  INFO 22172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-25 10:33:38.868  INFO 22172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-25 10:33:39.174  INFO 22172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-25 10:33:39.211  INFO 22172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-09-25 10:33:40.466  INFO 22172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-25 10:33:40.479  INFO 22172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25 10:33:40.528  WARN 22172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25 10:33:41.790  WARN 22172 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57c18774-8a8f-4dcc-b102-3f1ec9c9c446
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-25 10:33:41.909  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.910  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-09-25 10:33:41.911  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.912  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-09-25 10:33:41.913  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.913  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-09-25 10:33:41.914  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.915  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-09-25 10:33:41.915  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.915  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-09-25 10:33:41.915  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.915  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-09-25 10:33:41.915  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.916  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-09-25 10:33:41.916  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.916  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-09-25 10:33:41.917  WARN 22172 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 10:33:41.917  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-09-25 10:33:42.031  INFO 22172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fb8d720, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21b792c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b33f7a0, org.springframework.security.web.header.HeaderWriterFilter@171b0d3, org.springframework.security.web.authentication.logout.LogoutFilter@ce5a2ea, br.com.tonypool.security.JwtSecurity@6202f8bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f541f60, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1da5635e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@330d557e, org.springframework.security.web.session.SessionManagementFilter@3b9c386d, org.springframework.security.web.access.ExceptionTranslationFilter@19f9404d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bbf361a]
+2025-09-25 10:33:42.531  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-25 10:33:42.958  INFO 22172 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 7.975 seconds (JVM running for 9.544)
+2025-09-25 10:34:49.061  INFO 22172 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25 10:34:49.061  INFO 22172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25 10:34:49.065  INFO 22172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-09-25 10:35:11.067  INFO 22172 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 10:35:11.090  INFO 22172 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 373311 (horário atual)
+2025-09-25 10:35:11.090  INFO 22172 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 373311 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 10:35:11.178  INFO 22172 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 10:35:11.929  WARN 22172 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [678] milliseconds.
+2025-09-25 11:02:52.125  INFO 22172 --- [http-nio-8080-exec-1] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:02:52.137  INFO 22172 --- [http-nio-8080-exec-1] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 470477 (horário atual)
+2025-09-25 11:02:52.137  INFO 22172 --- [http-nio-8080-exec-1] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 470477 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:02:52.144  INFO 22172 --- [http-nio-8080-exec-1] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:17:18.448  INFO 22464 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 11.0.10 on DESKTOP-HLR4AN3 with PID 22464 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-09-25 11:17:18.451  INFO 22464 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-25 11:17:19.445  INFO 22464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25 11:17:19.529  INFO 22464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-09-25 11:17:20.150  INFO 22464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-09-25 11:17:20.166  INFO 22464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25 11:17:20.166  INFO 22464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-09-25 11:17:20.329  INFO 22464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-25 11:17:20.330  INFO 22464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1829 ms
+2025-09-25 11:17:20.571  INFO 22464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25 11:17:20.656  INFO 22464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-09-25 11:17:20.893  INFO 22464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-09-25 11:17:21.050  INFO 22464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-25 11:17:21.271  INFO 22464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-25 11:17:21.302  INFO 22464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-09-25 11:17:22.323  INFO 22464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-25 11:17:22.335  INFO 22464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25 11:17:22.373  WARN 22464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25 11:17:23.217  WARN 22464 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bb0742f6-bfe8-475b-bbce-810a42a05998
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-25 11:17:23.294  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.295  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-09-25 11:17:23.296  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.297  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-09-25 11:17:23.298  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.298  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-09-25 11:17:23.298  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.299  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-09-25 11:17:23.299  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.299  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-09-25 11:17:23.299  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.300  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-09-25 11:17:23.300  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.300  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-09-25 11:17:23.301  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.301  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-09-25 11:17:23.302  WARN 22464 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-25 11:17:23.302  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-09-25 11:17:23.362  INFO 22464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61e4a072, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32f2de5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@78d52d4c, org.springframework.security.web.header.HeaderWriterFilter@6a7cbeed, org.springframework.security.web.authentication.logout.LogoutFilter@1b1d93e9, br.com.tonypool.security.JwtSecurity@1a6df932, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34907a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d426e01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74120029, org.springframework.security.web.session.SessionManagementFilter@4a76c90, org.springframework.security.web.access.ExceptionTranslationFilter@29612ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79aa675b]
+2025-09-25 11:17:23.661  INFO 22464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-09-25 11:17:23.954  INFO 22464 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 5.895 seconds (JVM running for 7.058)
+2025-09-25 11:17:43.080  INFO 22464 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25 11:17:43.080  INFO 22464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25 11:17:43.080  INFO 22464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-25 11:17:44.106  WARN 22464 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [880] milliseconds.
+2025-09-25 11:29:15.655  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:29:15.755  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 588871 (horário atual)
+2025-09-25 11:29:15.756  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 588871 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:29:15.817  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:35:36.861  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:35:36.861  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 135751 (horário atual)
+2025-09-25 11:35:36.862  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 135751 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:35:36.863  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:40:07.150  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:40:07.152  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 208144 (horário atual)
+2025-09-25 11:40:07.154  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 208144 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:40:07.157  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:42:08.649  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:42:08.651  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 578672 (horário atual)
+2025-09-25 11:42:08.653  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 578672 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:42:08.658  INFO 22464 --- [http-nio-8080-exec-6] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:44:54.800  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:44:54.803  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 527153 (horário atual)
+2025-09-25 11:44:54.805  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 527153 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:44:54.807  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 11:54:49.283  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 11:54:49.289  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 420064 (horário atual)
+2025-09-25 11:54:49.292  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 420064 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 11:54:49.292  INFO 22464 --- [http-nio-8080-exec-8] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-09-25 12:20:09.167  INFO 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 12:20:09.175 ERROR 22464 --- [http-nio-8080-exec-5] b.c.t.services.TwoFactorAuthService      : [2FA] Erro: Código informado não possui 6 dígitos para o cliente 2: 18835
+2025-09-25 12:20:09.177  WARN 22464 --- [http-nio-8080-exec-5] b.c.t.c.AcessarContaController           : [2FA] Código 2FA inválido para idCliente=2
+2025-09-25 12:20:37.011  INFO 22464 --- [http-nio-8080-exec-7] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=FTIGGMN77NNR4RCY
+2025-09-25 12:20:37.011  INFO 22464 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 929203 (horário atual)
+2025-09-25 12:20:37.013  INFO 22464 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 929203 para secret: FTIGGMN77NNR4RCY | Resultado: true
+2025-09-25 12:20:37.017  INFO 22464 --- [http-nio-8080-exec-7] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2

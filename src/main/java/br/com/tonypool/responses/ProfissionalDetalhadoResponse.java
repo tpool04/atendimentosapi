@@ -1,22 +1,20 @@
 package br.com.tonypool.responses;
 
 import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class ServicoGetResponse {
-
-	private Integer idServico;
-	private String nome;
-	private Double valor;
-	private List<ProfissionalGetResponse> profissionais;
+public class ProfissionalDetalhadoResponse {
+    private Integer idProfissional;
+    private String nome;
+    private String telefone;
+    private List<ServicoResponse> servicos;
 }

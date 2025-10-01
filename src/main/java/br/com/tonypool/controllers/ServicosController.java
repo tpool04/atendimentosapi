@@ -46,7 +46,7 @@ public class ServicosController {
 				ServicoGetResponse servicoResponse = new ServicoGetResponse();
 				servicoResponse.setIdServico(servico.getIdServico());
 				servicoResponse.setNome(servico.getNome());
-				servicoResponse.setPreco(servico.getPreco());
+				servicoResponse.setValor(servico.getValor());
 				
 				servicoResponse.setProfissionais(new ArrayList<ProfissionalGetResponse>());
 				for(Profissional profissional : servico.getProfissionais()) {
@@ -104,13 +104,13 @@ public class ServicosController {
 		try {
 			Servico servico = new Servico();
 			servico.setNome(request.getNome());
-			servico.setPreco(request.getPreco());
+			servico.setValor(request.getValor());
 			servicoRepository.save(servico);
 
 			ServicoGetResponse response = new ServicoGetResponse();
 			response.setIdServico(servico.getIdServico());
 			response.setNome(servico.getNome());
-			response.setPreco(servico.getPreco());
+			response.setValor(servico.getValor());
 			response.setProfissionais(new ArrayList<ProfissionalGetResponse>());
 			return ResponseEntity.status(HttpStatus.CREATED).body(response);
 		} catch (Exception e) {

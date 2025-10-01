@@ -2,6 +2,7 @@ package br.com.tonypool.entities;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -37,9 +38,9 @@ public class Servico {
 	private String nome;
 
 	@Column(name = "preco", nullable = false)
-	private Double preco;
+	private Double valor;
 
-	@ManyToMany
+	@ManyToMany(cascade = CascadeType.MERGE)
 	@JoinTable(
 			// nome da tabela associativa
 			name = "servico_profissional",
@@ -52,6 +53,3 @@ public class Servico {
 	@OneToMany(mappedBy = "servico")
 	private List<Atendimento> atendimentos;
 }
-
-
-

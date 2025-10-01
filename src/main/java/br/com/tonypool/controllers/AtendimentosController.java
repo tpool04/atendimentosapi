@@ -130,7 +130,7 @@ public class AtendimentosController {
 				response.setIdAtendimento(atendimento.getIdAtendimento());
 				response.setDataHora(new SimpleDateFormat("dd/MM/yyyy HH:mm").format(atendimento.getDataHora()));
 				response.setNomeServico(atendimento.getServico().getNome());
-				response.setPrecoServico(atendimento.getServico().getPreco());
+				response.setValorServico(atendimento.getServico().getValor());
 				response.setNomeProfissional(atendimento.getProfissional().getNome());
 				response.setTelefoneProfissional(atendimento.getProfissional().getTelefone());
 				response.setNomeCliente(cliente.getNome());
@@ -251,7 +251,7 @@ public class AtendimentosController {
 			response.setIdAtendimento(atendimento.getIdAtendimento());
 			response.setDataHora(new SimpleDateFormat("dd/MM/yyyy HH:mm").format(atendimento.getDataHora()));
 			response.setNomeServico(atendimento.getServico().getNome());
-			response.setPrecoServico(atendimento.getServico().getPreco());
+			response.setValorServico(atendimento.getServico().getValor());
 			response.setNomeProfissional(atendimento.getProfissional().getNome());
 			response.setTelefoneProfissional(atendimento.getProfissional().getTelefone());
 			response.setNomeCliente(cliente.getNome());

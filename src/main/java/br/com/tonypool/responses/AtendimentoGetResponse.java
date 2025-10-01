@@ -16,7 +16,7 @@ public class AtendimentoGetResponse {
 	private Integer idAtendimento;
 	private String dataHora;
 	private String nomeServico;
-	private Double precoServico;
+	private Double valorServico;
 	private String nomeProfissional;
 	private String telefoneProfissional;
 	private String nomeCliente;

@@ -17,12 +17,15 @@ public class TokenSecurity {
 	/*
 	 * Método utilizado para gerar o TOKEN
 	 */
-	public static String generateToken(String cpf, Integer idCliente) {
+	public static String generateToken(String cpf, Integer idCliente, String perfilNome) {
 
 		// chave secreta para geração do TOKEN (Evitar falsificações)
 		String secretKey = JwtSecurity.SECRET;
-
-		List<GrantedAuthority> grantedAuthorities = AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_USER");
+		String authority = "ROLE_USER";
+		if ("ADMIN".equalsIgnoreCase(perfilNome)) {
+			authority = "ROLE_ADMIN";
+		}
+		List<GrantedAuthority> grantedAuthorities = AuthorityUtils.commaSeparatedStringToAuthorityList(authority);
 
 		String token = Jwts.builder().setId("atendimentosapi").setSubject(cpf)
 				.claim("idCliente", idCliente)
@@ -45,20 +48,32 @@ public class TokenSecurity {
 	private static <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
 
 		String secretKey = JwtSecurity.SECRET;
+		try {
 		final Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(token).getBody();
 
 		return claimsResolver.apply(claims);
+		} catch (Exception e) {
+	        throw new io.jsonwebtoken.MalformedJwtException("Token inválido ou corrompido", e);
+	    }
 	}
 
 	public static Integer getIdClienteFromToken(String token) {
 		String secretKey = JwtSecurity.SECRET;
-		final Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(token).getBody();
-		Object idObj = claims.get("idCliente");
-		if (idObj == null) return null;
-		if (idObj instanceof Integer) return (Integer) idObj;
-		if (idObj instanceof Number) return ((Number) idObj).intValue();
-		if (idObj instanceof String) return Integer.valueOf((String) idObj);
-		throw new IllegalArgumentException("idCliente claim is not a valid Integer");
+		try {
+			final Claims claims = Jwts.parser().setSigningKey(secretKey.getBytes()).parseClaimsJws(token).getBody();
+			Object idObj = claims.get("idCliente");
+			if (idObj == null)
+				return null;
+			if (idObj instanceof Integer)
+				return (Integer) idObj;
+			if (idObj instanceof Number)
+				return ((Number) idObj).intValue();
+			if (idObj instanceof String)
+				return Integer.valueOf((String) idObj);
+			throw new IllegalArgumentException("idCliente claim is not a valid Integer");
+		} catch (Exception e) {
+			throw new io.jsonwebtoken.MalformedJwtException("Token inválido ou corrompido", e);
+		}
 	}
 
 }

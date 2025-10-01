@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import br.com.tonypool.entities.Profissional;
 import br.com.tonypool.entities.Servico;
 import br.com.tonypool.repositories.IServicoRepository;
-import br.com.tonypool.repositories.IProfissionalRepository;
 import br.com.tonypool.requests.ServicoCreateRequest;
 import br.com.tonypool.responses.ProfissionalGetResponse;
 import br.com.tonypool.responses.ServicoGetResponse;
@@ -32,9 +31,6 @@ public class ServicosController {
 
 	@Autowired
 	private IServicoRepository servicoRepository;
-	
-	@Autowired
-	private IProfissionalRepository profissionalRepository;
 	
 	@CrossOrigin
 	@ApiOperation("Endpoint para consulta de serviços.")

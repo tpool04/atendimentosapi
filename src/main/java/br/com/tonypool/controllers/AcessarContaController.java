@@ -57,7 +57,7 @@ public class AcessarContaController {
 					//.body(TokenSecurity.generateToken(cliente.getCpf()));
 			
 			String perfilNome = cliente.getPerfil() != null ? cliente.getPerfil().getNome() : null;
-            String token = TokenSecurity.generateToken(cliente.getCpf(), cliente.getIdCliente());
+            String token = TokenSecurity.generateToken(cliente.getCpf(), cliente.getIdCliente(), perfilNome);
             AcessarContaPostDTO dto = new AcessarContaPostDTO(token, cliente.getNome(), cliente.getIdCliente(), true, perfilNome);
 
 	        return ResponseEntity.status(HttpStatus.OK).body(dto);
@@ -101,7 +101,7 @@ public class AcessarContaController {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(erro);
             }
             String perfilNome = cliente.getPerfil() != null ? cliente.getPerfil().getNome() : null;
-            String token = TokenSecurity.generateToken(cliente.getCpf(), cliente.getIdCliente());
+            String token = TokenSecurity.generateToken(cliente.getCpf(), cliente.getIdCliente(), perfilNome);
             logger.info("[2FA] Código válido, token gerado para idCliente={}", cliente.getIdCliente());
             AcessarContaPostDTO dto = new AcessarContaPostDTO(token, cliente.getNome(), cliente.getIdCliente(), true, perfilNome);
             return ResponseEntity.status(HttpStatus.OK).body(dto);

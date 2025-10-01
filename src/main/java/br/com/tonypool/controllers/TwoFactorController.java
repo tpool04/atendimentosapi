@@ -26,7 +26,7 @@ public class TwoFactorController {
                 return ResponseEntity.status(404).body("Cliente não encontrado.");
             }
             String otpUrl = twoFactorAuthService.setup2FA(cliente);
-            return ResponseEntity.ok(java.util.Collections.singletonMap("otpAuthUrl", otpUrl));
+            return ResponseEntity.ok(java.util.Collections.singletonMap("qrCodeUrl", otpUrl));
         } catch (Exception e) {
             String tipoErro = e.getClass().getSimpleName();
             String mensagem = tipoErro + ": " + e.getMessage();

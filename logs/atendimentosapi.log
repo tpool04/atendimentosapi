@@ -1344,3 +1344,650 @@ This generated password is for development use only. Your security configuration
 2025-10-01 13:20:59.566  INFO 7668 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret FTIGGMN77NNR4RCY: 514126 (horário atual)
 2025-10-01 13:20:59.566  INFO 7668 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 514126 para secret: FTIGGMN77NNR4RCY | Resultado: true
 2025-10-01 13:20:59.586  INFO 7668 --- [http-nio-8080-exec-7] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-10-01 13:56:12.175  INFO 7668 --- [http-nio-8080-exec-3] b.c.t.services.TwoFactorAuthService      : [2FA] Gerando secret para cliente 3: XVVMICPD6YS3AFFZ
+2025-10-01 13:56:12.213  INFO 7668 --- [http-nio-8080-exec-3] b.c.t.services.TwoFactorAuthService      : [2FA] Secret salvo para cliente 3: XVVMICPD6YS3AFFZ
+2025-10-01 14:04:08.871  INFO 7668 --- [http-nio-8080-exec-2] b.c.t.services.TwoFactorAuthService      : [2FA] Gerando secret para cliente 2: PQWOE3MYKOWPBCQO
+2025-10-01 14:04:08.875  INFO 7668 --- [http-nio-8080-exec-2] b.c.t.services.TwoFactorAuthService      : [2FA] Secret salvo para cliente 2: PQWOE3MYKOWPBCQO
+2025-10-01 14:07:04.155  INFO 7668 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Gerando secret para cliente 2: PWDV6JBQS6JHZSQV
+2025-10-01 14:07:04.164  INFO 7668 --- [http-nio-8080-exec-7] b.c.t.services.TwoFactorAuthService      : [2FA] Secret salvo para cliente 2: PWDV6JBQS6JHZSQV
+2025-10-01 14:07:40.494  INFO 7668 --- [http-nio-8080-exec-9] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=PWDV6JBQS6JHZSQV
+2025-10-01 14:07:40.504 ERROR 7668 --- [http-nio-8080-exec-9] b.c.t.services.TwoFactorAuthService      : [2FA] Erro: Código informado não possui 6 dígitos para o cliente 2: 89620
+2025-10-01 14:07:40.505  WARN 7668 --- [http-nio-8080-exec-9] b.c.t.c.AcessarContaController           : [2FA] Código 2FA inválido para idCliente=2
+2025-10-01 14:08:15.653  INFO 7668 --- [http-nio-8080-exec-1] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=PWDV6JBQS6JHZSQV
+2025-10-01 14:08:15.655  INFO 7668 --- [http-nio-8080-exec-1] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret PWDV6JBQS6JHZSQV: 800010 (horário atual)
+2025-10-01 14:08:15.656  INFO 7668 --- [http-nio-8080-exec-1] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 800010 para secret: PWDV6JBQS6JHZSQV | Resultado: true
+2025-10-01 14:08:15.657  INFO 7668 --- [http-nio-8080-exec-1] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-10-01 14:18:07.488  INFO 7668 --- [RMI TCP Connection(62)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 14:18:07.764  INFO 7668 --- [RMI TCP Connection(62)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:18:07.790  INFO 7668 --- [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 14:18:07.813  INFO 7668 --- [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 14:18:31.906  INFO 26148 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 26148 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 14:18:31.908  INFO 26148 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 14:18:33.321  INFO 26148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 14:18:33.424  INFO 26148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2025-10-01 14:18:34.411  INFO 26148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 14:18:34.433  INFO 26148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 14:18:34.434  INFO 26148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 14:18:34.645  INFO 26148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 14:18:34.645  INFO 26148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2642 ms
+2025-10-01 14:18:35.057  INFO 26148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 14:18:35.200  INFO 26148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 14:18:35.540  INFO 26148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 14:18:35.713  INFO 26148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 14:18:36.057  INFO 26148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 14:18:36.090  INFO 26148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 14:18:37.305  INFO 26148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 14:18:37.316  INFO 26148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:18:37.357  WARN 26148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 14:18:39.039  WARN 26148 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5cd3084b-48eb-43d4-b7be-52adbb236bdc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 14:18:39.188  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.189  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 14:18:39.191  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.192  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 14:18:39.192  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.193  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 14:18:39.193  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.193  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 14:18:39.193  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.193  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 14:18:39.193  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.194  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 14:18:39.194  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.194  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 14:18:39.194  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.194  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 14:18:39.194  WARN 26148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:18:39.195  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 14:18:39.237  INFO 26148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e2546bf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e572b08, org.springframework.security.web.context.SecurityContextPersistenceFilter@60e5b3a8, org.springframework.security.web.header.HeaderWriterFilter@9da386c, org.springframework.security.web.authentication.logout.LogoutFilter@349686e8, br.com.tonypool.security.JwtSecurity@6908674b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31c31fa6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65dafe50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a3e458, org.springframework.security.web.session.SessionManagementFilter@78a0d664, org.springframework.security.web.access.ExceptionTranslationFilter@70fcd3e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f910f36]
+2025-10-01 14:18:39.620  INFO 26148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 14:18:39.926  INFO 26148 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 8.387 seconds (JVM running for 9.04)
+2025-10-01 14:19:02.453  INFO 26148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 14:19:02.453  INFO 26148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 14:19:02.455  INFO 26148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01 14:19:12.632  INFO 26148 --- [http-nio-8080-exec-4] b.c.t.c.AcessarContaController           : [2FA] Secret do cliente para validação: idCliente=2, secret2FA=PWDV6JBQS6JHZSQV
+2025-10-01 14:19:12.661  INFO 26148 --- [http-nio-8080-exec-4] b.c.t.services.TwoFactorAuthService      : [2FA] Código TOTP esperado pelo backend para secret PWDV6JBQS6JHZSQV: 604129 (horário atual)
+2025-10-01 14:19:12.663  INFO 26148 --- [http-nio-8080-exec-4] b.c.t.services.TwoFactorAuthService      : [2FA] Verificando código recebido: 604129 para secret: PWDV6JBQS6JHZSQV | Resultado: true
+2025-10-01 14:19:12.760  INFO 26148 --- [http-nio-8080-exec-4] b.c.t.c.AcessarContaController           : [2FA] Código válido, token gerado para idCliente=2
+2025-10-01 14:19:12.961  WARN 26148 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
+2025-10-01 14:20:10.786  WARN 26148 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:20:10.786 ERROR 26148 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(2199999999999) already exists.
+2025-10-01 14:20:36.582  WARN 26148 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:20:36.582 ERROR 26148 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21989965847) already exists.
+2025-10-01 14:25:23.975  WARN 26148 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:25:23.976 ERROR 26148 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999999) already exists.
+2025-10-01 14:33:20.820  INFO 26148 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 14:33:21.100  INFO 26148 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:33:21.129  INFO 26148 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 14:33:21.141  INFO 26148 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 14:33:58.069  INFO 1332 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 1332 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 14:33:58.077  INFO 1332 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 14:33:59.127  INFO 1332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 14:33:59.227  INFO 1332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 6 JPA repository interfaces.
+2025-10-01 14:34:00.026  INFO 1332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 14:34:00.045  INFO 1332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 14:34:00.045  INFO 1332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 14:34:00.228  INFO 1332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 14:34:00.229  INFO 1332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2083 ms
+2025-10-01 14:34:00.535  INFO 1332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 14:34:00.648  INFO 1332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 14:34:00.977  INFO 1332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 14:34:01.120  INFO 1332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 14:34:01.391  INFO 1332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 14:34:01.420  INFO 1332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 14:34:02.764  INFO 1332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 14:34:02.774  INFO 1332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:34:02.809  WARN 1332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 14:34:03.998  WARN 1332 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0d7bbc88-1769-491a-96b2-fd896b1fd1ce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 14:34:04.064  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.067  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 14:34:04.068  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.069  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 14:34:04.069  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.069  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 14:34:04.070  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.070  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 14:34:04.070  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.070  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 14:34:04.070  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.072  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 14:34:04.072  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.072  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 14:34:04.072  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.072  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 14:34:04.072  WARN 1332 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:34:04.072  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 14:34:04.107  INFO 1332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e572b08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6908674b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e084a26, org.springframework.security.web.header.HeaderWriterFilter@492a220e, org.springframework.security.web.authentication.logout.LogoutFilter@5c3e7128, br.com.tonypool.security.JwtSecurity@a3e458, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70ebaa1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29b2a94c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b74a4d, org.springframework.security.web.session.SessionManagementFilter@1237aa73, org.springframework.security.web.access.ExceptionTranslationFilter@701bd6e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6421bc7e]
+2025-10-01 14:34:04.478  INFO 1332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 14:34:04.944  INFO 1332 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 7.253 seconds (JVM running for 8.17)
+2025-10-01 14:34:14.294  INFO 1332 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 14:34:14.294  INFO 1332 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 14:34:14.300  INFO 1332 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01 14:34:14.589  WARN 1332 --- [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [103] milliseconds.
+2025-10-01 14:34:14.589  WARN 1332 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [103] milliseconds.
+2025-10-01 14:34:58.847  WARN 1332 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:34:58.848 ERROR 1332 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999999) already exists.
+2025-10-01 14:36:50.626  WARN 1332 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:36:50.626 ERROR 1332 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999999) already exists.
+2025-10-01 14:38:18.528  INFO 1332 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 14:38:18.608  INFO 1332 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:38:18.613  INFO 1332 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 14:38:18.625  INFO 1332 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 14:38:32.272  INFO 25620 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 25620 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 14:38:32.276  INFO 25620 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 14:38:33.149  INFO 25620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 14:38:33.244  INFO 25620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2025-10-01 14:38:33.891  INFO 25620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 14:38:33.906  INFO 25620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 14:38:33.906  INFO 25620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 14:38:34.050  INFO 25620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 14:38:34.050  INFO 25620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1699 ms
+2025-10-01 14:38:34.308  INFO 25620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 14:38:34.425  INFO 25620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 14:38:34.768  INFO 25620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 14:38:34.887  INFO 25620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 14:38:35.156  INFO 25620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 14:38:35.187  INFO 25620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 14:38:36.166  INFO 25620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 14:38:36.179  INFO 25620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 14:38:36.221  WARN 25620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 14:38:37.188  WARN 25620 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dcf69780-3b96-4e09-a2ff-8a5867164004
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 14:38:37.263  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.264  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 14:38:37.266  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.266  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 14:38:37.266  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.267  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 14:38:37.267  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.267  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 14:38:37.268  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.268  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 14:38:37.269  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.269  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 14:38:37.269  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.270  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 14:38:37.270  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.270  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 14:38:37.270  WARN 25620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 14:38:37.270  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 14:38:37.317  INFO 25620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39c93af6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3903cfc9, org.springframework.security.web.context.SecurityContextPersistenceFilter@39d37da8, org.springframework.security.web.header.HeaderWriterFilter@615b1baf, org.springframework.security.web.authentication.logout.LogoutFilter@3453f79c, br.com.tonypool.security.JwtSecurity@7b1b1784, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b8601a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a045e85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@288e50c1, org.springframework.security.web.session.SessionManagementFilter@3a7f382, org.springframework.security.web.access.ExceptionTranslationFilter@70ebaa1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c75c5e8]
+2025-10-01 14:38:37.638  INFO 25620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 14:38:37.948  INFO 25620 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 6.058 seconds (JVM running for 6.712)
+2025-10-01 14:38:43.582  INFO 25620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 14:38:43.583  INFO 25620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 14:38:43.586  INFO 25620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01 14:39:04.577  WARN 25620 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:39:04.577 ERROR 25620 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999999) already exists.
+2025-10-01 14:43:49.132  WARN 25620 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:43:49.134 ERROR 25620 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999999) already exists.
+2025-10-01 14:43:56.211  WARN 25620 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:43:56.211 ERROR 25620 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999999991) already exists.
+2025-10-01 14:44:37.224  WARN 25620 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 14:44:37.225 ERROR 25620 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21989898989) already exists.
+2025-10-01 15:04:14.112  INFO 25620 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 15:04:14.460  INFO 25620 --- [RMI TCP Connection(29)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 15:04:14.491  INFO 25620 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 15:04:14.514  INFO 25620 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 15:04:41.481  INFO 16872 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 16872 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 15:04:41.483  INFO 16872 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 15:04:42.504  INFO 16872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 15:04:42.605  INFO 16872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 6 JPA repository interfaces.
+2025-10-01 15:04:43.298  INFO 16872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 15:04:43.316  INFO 16872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 15:04:43.316  INFO 16872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 15:04:43.486  INFO 16872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 15:04:43.487  INFO 16872 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1945 ms
+2025-10-01 15:04:43.773  INFO 16872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 15:04:43.892  INFO 16872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 15:04:44.219  INFO 16872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 15:04:44.346  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 15:04:44.599  INFO 16872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 15:04:44.626  INFO 16872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 15:04:45.669  INFO 16872 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 15:04:45.680  INFO 16872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 15:04:45.722  WARN 16872 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 15:04:46.632  WARN 16872 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57900024-f65e-47ca-9bc5-e0ef9b405921
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 15:04:46.695  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.696  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 15:04:46.697  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.697  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 15:04:46.697  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.697  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 15:04:46.697  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.697  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 15:04:46.698  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.698  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 15:04:46.698  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.698  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 15:04:46.698  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.699  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 15:04:46.699  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.699  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 15:04:46.699  WARN 16872 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:04:46.700  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 15:04:46.733  INFO 16872 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c75c5e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69374e28, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a2297d7, org.springframework.security.web.header.HeaderWriterFilter@70ebaa1e, org.springframework.security.web.authentication.logout.LogoutFilter@4619854a, br.com.tonypool.security.JwtSecurity@39c93af6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39d37da8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d8512e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3903cfc9, org.springframework.security.web.session.SessionManagementFilter@2c4e63b3, org.springframework.security.web.access.ExceptionTranslationFilter@1e084a26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6dd7af2f]
+2025-10-01 15:04:47.083  INFO 16872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 15:04:47.373  INFO 16872 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 6.42 seconds (JVM running for 7.31)
+2025-10-01 15:05:57.204  INFO 16872 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 15:05:57.205  INFO 16872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 15:05:57.209  INFO 16872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01 15:06:31.480  WARN 16872 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 15:06:31.480 ERROR 16872 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21987549999) already exists.
+2025-10-01 15:13:28.653  INFO 16872 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 15:13:28.706  INFO 16872 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 15:13:28.713  INFO 16872 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 15:13:28.720  INFO 16872 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 15:13:46.272  INFO 3248 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 3248 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 15:13:46.278  INFO 3248 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 15:13:47.266  INFO 3248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 15:13:47.363  INFO 3248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 6 JPA repository interfaces.
+2025-10-01 15:13:48.157  INFO 3248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 15:13:48.173  INFO 3248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 15:13:48.174  INFO 3248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 15:13:48.312  INFO 3248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 15:13:48.313  INFO 3248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1975 ms
+2025-10-01 15:13:48.569  INFO 3248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 15:13:48.696  INFO 3248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 15:13:49.079  INFO 3248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 15:13:49.218  INFO 3248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 15:13:49.449  INFO 3248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 15:13:49.481  INFO 3248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 15:13:50.604  INFO 3248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 15:13:50.617  INFO 3248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 15:13:50.661  WARN 3248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 15:13:51.730  WARN 3248 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 531a6b9f-b7b6-403b-951a-b3c2ae4574b1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 15:13:51.798  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.800  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 15:13:51.801  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.801  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 15:13:51.803  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.803  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 15:13:51.803  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.803  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 15:13:51.804  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.804  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 15:13:51.806  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.806  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 15:13:51.806  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.807  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 15:13:51.807  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.807  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 15:13:51.807  WARN 3248 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 15:13:51.807  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 15:13:51.845  INFO 3248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55e02661, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f38545a, org.springframework.security.web.context.SecurityContextPersistenceFilter@47596e9, org.springframework.security.web.header.HeaderWriterFilter@77262e71, org.springframework.security.web.authentication.logout.LogoutFilter@1ae26c59, br.com.tonypool.security.JwtSecurity@549be307, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74cad577, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43fdef43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d03cdc7, org.springframework.security.web.session.SessionManagementFilter@7325b786, org.springframework.security.web.access.ExceptionTranslationFilter@4cc4f6bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@488c608a]
+2025-10-01 15:13:52.215  INFO 3248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 15:13:52.607  INFO 3248 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 7.06 seconds (JVM running for 8.515)
+2025-10-01 15:14:00.910  INFO 3248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 15:14:00.910  INFO 3248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 15:14:00.914  INFO 3248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01 15:14:01.237  WARN 3248 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [116] milliseconds.
+2025-10-01 15:14:01.237  WARN 3248 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [116] milliseconds.
+2025-10-01 15:21:35.207  WARN 3248 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 15:21:35.213 ERROR 3248 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21999921875) already exists.
+2025-10-01 15:45:28.313  WARN 3248 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 15:45:28.324 ERROR 3248 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21345678932) already exists.
+2025-10-01 16:03:56.143  INFO 3248 --- [RMI TCP Connection(52)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 16:03:56.388  INFO 3248 --- [RMI TCP Connection(52)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 16:03:56.419  INFO 3248 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 16:03:56.453  INFO 3248 --- [RMI TCP Connection(52)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 16:18:30.794  INFO 8420 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 8420 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 16:18:30.801  INFO 8420 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 16:18:31.839  INFO 8420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 16:18:31.937  INFO 8420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
+2025-10-01 16:18:32.713  INFO 8420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 16:18:32.730  INFO 8420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 16:18:32.731  INFO 8420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 16:18:32.860  INFO 8420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 16:18:32.861  INFO 8420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1995 ms
+2025-10-01 16:18:33.120  INFO 8420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 16:18:33.236  INFO 8420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 16:18:33.527  INFO 8420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 16:18:33.698  INFO 8420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 16:18:33.972  INFO 8420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 16:18:34.002  INFO 8420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 16:18:35.070  INFO 8420 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 16:18:35.084  INFO 8420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 16:18:35.139  WARN 8420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 16:18:36.494  WARN 8420 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 33847b74-30ae-4d5a-9b6b-1a48921b78e3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 16:18:36.577  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.578  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 16:18:36.580  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.580  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 16:18:36.581  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.582  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 16:18:36.582  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.582  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 16:18:36.582  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.582  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 16:18:36.582  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.582  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 16:18:36.583  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.583  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 16:18:36.583  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.583  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 16:18:36.583  WARN 8420 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:18:36.583  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 16:18:36.622  INFO 8420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73eaae1e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@659565ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@20843604, org.springframework.security.web.header.HeaderWriterFilter@74cad577, org.springframework.security.web.authentication.logout.LogoutFilter@7bbc11ed, br.com.tonypool.security.JwtSecurity@481eb705, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31d8352e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27244a88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ae0eb98, org.springframework.security.web.session.SessionManagementFilter@3d96b8fb, org.springframework.security.web.access.ExceptionTranslationFilter@47596e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1267f832]
+2025-10-01 16:18:36.974  INFO 8420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 16:18:37.302  INFO 8420 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 6.916 seconds (JVM running for 9.305)
+2025-10-01 16:18:46.937  INFO 8420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 16:18:46.938  INFO 8420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 16:18:46.941  INFO 8420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01 16:19:25.351  WARN 8420 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 16:19:25.352 ERROR 8420 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21986532144) already exists.
+2025-10-01 16:30:59.984  INFO 8420 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 16:31:00.056  INFO 8420 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 16:31:00.062  INFO 8420 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 16:31:00.079  INFO 8420 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 16:31:27.685  INFO 6260 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 6260 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 16:31:27.691  INFO 6260 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 16:31:28.597  INFO 6260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 16:31:28.673  INFO 6260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 6 JPA repository interfaces.
+2025-10-01 16:31:29.333  INFO 6260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 16:31:29.350  INFO 6260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 16:31:29.351  INFO 6260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 16:31:29.473  INFO 6260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 16:31:29.474  INFO 6260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1727 ms
+2025-10-01 16:31:29.699  INFO 6260 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 16:31:29.777  INFO 6260 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 16:31:30.056  INFO 6260 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 16:31:30.192  INFO 6260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 16:31:30.401  INFO 6260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 16:31:30.433  INFO 6260 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 16:31:32.387  INFO 6260 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 16:31:32.397  INFO 6260 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 16:31:32.444  WARN 6260 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 16:31:33.378  WARN 6260 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 136e9e7c-584c-4fac-a00f-0f9a4548b3e5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 16:31:33.449  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.450  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 16:31:33.452  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.452  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 16:31:33.452  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.453  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 16:31:33.453  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.453  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 16:31:33.454  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.455  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 16:31:33.455  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.455  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 16:31:33.455  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.456  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 16:31:33.456  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.456  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 16:31:33.456  WARN 6260 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 16:31:33.456  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 16:31:33.497  INFO 6260 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b48361e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44b82007, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b8c9729, org.springframework.security.web.header.HeaderWriterFilter@2f006edf, org.springframework.security.web.authentication.logout.LogoutFilter@75ff2b6d, br.com.tonypool.security.JwtSecurity@5ae22651, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15ade272, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@183435c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@464017f5, org.springframework.security.web.session.SessionManagementFilter@78d52d4c, org.springframework.security.web.access.ExceptionTranslationFilter@3d96b8fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ed0128b]
+2025-10-01 16:31:33.827  INFO 6260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 16:31:34.139  INFO 6260 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 6.869 seconds (JVM running for 7.697)
+2025-10-01 16:31:46.643  INFO 6260 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 16:31:46.643  INFO 6260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 16:31:46.657  INFO 6260 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2025-10-01 16:31:46.967  WARN 6260 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [114] milliseconds.
+2025-10-01 16:31:46.967  WARN 6260 --- [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [114] milliseconds.
+2025-10-01 16:32:23.398  WARN 6260 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 16:32:23.398 ERROR 6260 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21956548525) already exists.
+2025-10-01 17:30:28.885  INFO 6260 --- [RMI TCP Connection(62)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 17:30:29.043  INFO 6260 --- [RMI TCP Connection(62)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:30:29.055  INFO 6260 --- [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 17:30:29.066  INFO 6260 --- [RMI TCP Connection(62)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 17:30:46.012  INFO 4620 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 4620 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 17:30:46.019  INFO 4620 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 17:30:47.106  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 17:30:47.183  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-10-01 17:30:47.842  INFO 4620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 17:30:47.857  INFO 4620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 17:30:47.858  INFO 4620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 17:30:47.978  INFO 4620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 17:30:47.979  INFO 4620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1901 ms
+2025-10-01 17:30:48.219  INFO 4620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 17:30:48.311  INFO 4620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 17:30:48.572  INFO 4620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 17:30:48.716  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 17:30:48.929  INFO 4620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 17:30:48.953  INFO 4620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 17:30:49.911  INFO 4620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 17:30:49.922  INFO 4620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:30:49.964  WARN 4620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 17:30:50.926  WARN 4620 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e07105ab-1a3f-4fb6-9ff2-6e7d99e7e69f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 17:30:50.990  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.991  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 17:30:50.992  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.993  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 17:30:50.994  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.994  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 17:30:50.994  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.995  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 17:30:50.995  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.995  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 17:30:50.996  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.996  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 17:30:50.996  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.996  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 17:30:50.996  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.996  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 17:30:50.996  WARN 4620 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:30:50.996  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 17:30:51.033  INFO 4620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5319e4fc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b48361e, org.springframework.security.web.context.SecurityContextPersistenceFilter@34907a49, org.springframework.security.web.header.HeaderWriterFilter@1d208795, org.springframework.security.web.authentication.logout.LogoutFilter@4ccf1d3e, br.com.tonypool.security.JwtSecurity@44b82007, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ae26c59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e8f97dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ae22651, org.springframework.security.web.session.SessionManagementFilter@7da0587a, org.springframework.security.web.access.ExceptionTranslationFilter@6a7cbeed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18fcfe7e]
+2025-10-01 17:30:51.362  INFO 4620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 17:30:51.702  INFO 4620 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 6.112 seconds (JVM running for 7.037)
+2025-10-01 17:31:06.334  INFO 4620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 17:31:06.335  INFO 4620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 17:31:06.339  INFO 4620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01 17:31:38.837  WARN 4620 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 17:31:38.841 ERROR 4620 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21965328745) already exists.
+2025-10-01 17:32:10.367  INFO 4620 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 17:32:10.423  INFO 4620 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:32:10.427  INFO 4620 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 17:32:10.436  INFO 4620 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 17:33:00.248  INFO 2004 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 2004 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 17:33:00.254  INFO 2004 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 17:33:01.167  INFO 2004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 17:33:01.243  INFO 2004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 6 JPA repository interfaces.
+2025-10-01 17:33:01.863  INFO 2004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 17:33:01.874  INFO 2004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 17:33:01.874  INFO 2004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 17:33:01.987  INFO 2004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 17:33:01.989  INFO 2004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1681 ms
+2025-10-01 17:33:02.226  INFO 2004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 17:33:02.283  INFO 2004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 17:33:02.457  INFO 2004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 17:33:02.573  INFO 2004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 17:33:02.760  INFO 2004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 17:33:02.782  INFO 2004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 17:33:03.859  INFO 2004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 17:33:03.870  INFO 2004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:33:03.917  WARN 2004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 17:33:04.883  WARN 2004 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 09caebc6-4649-432f-b264-e8a016bd1bb0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 17:33:04.952  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.952  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 17:33:04.953  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.953  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 17:33:04.953  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.954  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 17:33:04.954  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.954  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 17:33:04.954  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.955  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 17:33:04.956  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.956  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 17:33:04.957  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.957  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 17:33:04.957  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.957  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 17:33:04.958  WARN 2004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:33:04.958  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 17:33:04.999  INFO 2004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b48361e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44b82007, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b8c9729, org.springframework.security.web.header.HeaderWriterFilter@2f006edf, org.springframework.security.web.authentication.logout.LogoutFilter@75ff2b6d, br.com.tonypool.security.JwtSecurity@5ae22651, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15ade272, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@183435c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@464017f5, org.springframework.security.web.session.SessionManagementFilter@78d52d4c, org.springframework.security.web.access.ExceptionTranslationFilter@3d96b8fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ed0128b]
+2025-10-01 17:33:05.358  INFO 2004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 17:33:05.748  INFO 2004 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 5.917 seconds (JVM running for 6.805)
+2025-10-01 17:33:12.393  INFO 2004 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 17:33:12.393  INFO 2004 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 17:33:12.396  INFO 2004 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01 17:33:43.100  WARN 2004 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 17:33:43.102 ERROR 2004 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21856214569) already exists.
+2025-10-01 17:34:22.272  INFO 2004 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 17:34:22.318  INFO 2004 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:34:22.322  INFO 2004 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 17:34:22.329  INFO 2004 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 17:34:52.492  INFO 26232 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 26232 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 17:34:52.499  INFO 26232 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 17:34:53.382  INFO 26232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 17:34:53.456  INFO 26232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2025-10-01 17:34:54.047  INFO 26232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 17:34:54.060  INFO 26232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 17:34:54.060  INFO 26232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 17:34:54.167  INFO 26232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 17:34:54.167  INFO 26232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1612 ms
+2025-10-01 17:34:54.379  INFO 26232 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 17:34:54.433  INFO 26232 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 17:34:54.600  INFO 26232 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 17:34:54.716  INFO 26232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 17:34:54.898  INFO 26232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 17:34:54.917  INFO 26232 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 17:34:55.747  INFO 26232 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 17:34:55.760  INFO 26232 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:34:55.799  WARN 26232 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 17:34:57.154  WARN 26232 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eddda340-2913-42a1-9879-171b415759a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 17:34:57.215  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.216  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 17:34:57.216  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.216  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 17:34:57.216  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.218  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 17:34:57.218  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.218  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 17:34:57.218  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.218  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 17:34:57.218  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.219  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 17:34:57.219  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.219  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 17:34:57.220  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.220  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 17:34:57.221  WARN 26232 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:34:57.221  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 17:34:57.256  INFO 26232 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ed0128b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5319e4fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cb7f2fe, org.springframework.security.web.header.HeaderWriterFilter@47462daf, org.springframework.security.web.authentication.logout.LogoutFilter@6af02de0, br.com.tonypool.security.JwtSecurity@3b48361e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c376461, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78d52d4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44b82007, org.springframework.security.web.session.SessionManagementFilter@28dd038f, org.springframework.security.web.access.ExceptionTranslationFilter@2bbaf1bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bb661e0]
+2025-10-01 17:34:57.579  INFO 26232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 17:34:57.900  INFO 26232 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 5.833 seconds (JVM running for 6.659)
+2025-10-01 17:35:08.073  INFO 26232 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 17:35:08.074  INFO 26232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 17:35:08.080  INFO 26232 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-10-01 17:35:32.993  WARN 26232 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-10-01 17:35:32.993 ERROR 26232 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "uk_liqar0rls4uq89490pr2yv9o1"
+  Detalhe: Key (telefone)=(21785265472) already exists.
+2025-10-01 17:40:46.778  INFO 26232 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-01 17:40:46.818  INFO 26232 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:40:46.821  INFO 26232 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01 17:40:46.826  INFO 26232 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01 17:41:05.859  INFO 22092 --- [main] b.c.tonypool.AtendimentosapiApplication  : Starting AtendimentosapiApplication using Java 17.0.12 on DESKTOP-HLR4AN3 with PID 22092 (C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi\target\classes started by tonyp in C:\Users\tonyp\OneDrive\Documentos\curso_java\workspace\atendimentosapi)
+2025-10-01 17:41:05.866  INFO 22092 --- [main] b.c.tonypool.AtendimentosapiApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-01 17:41:06.787  INFO 22092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01 17:41:06.859  INFO 22092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 6 JPA repository interfaces.
+2025-10-01 17:41:07.482  INFO 22092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-01 17:41:07.491  INFO 22092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01 17:41:07.492  INFO 22092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-10-01 17:41:07.602  INFO 22092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01 17:41:07.603  INFO 22092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1682 ms
+2025-10-01 17:41:07.817  INFO 22092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01 17:41:07.871  INFO 22092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-10-01 17:41:08.045  INFO 22092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-01 17:41:08.178  INFO 22092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01 17:41:08.370  INFO 22092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01 17:41:08.390  INFO 22092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-01 17:41:09.243  INFO 22092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-01 17:41:09.256  INFO 22092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01 17:41:09.295  WARN 22092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01 17:41:10.220  WARN 22092 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 79583d3b-e080-4d2b-a3bd-21d4f8849f5c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-01 17:41:10.282  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.284  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v2/api-docs']
+2025-10-01 17:41:10.285  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.285  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources']
+2025-10-01 17:41:10.285  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.286  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-resources/**']
+2025-10-01 17:41:10.286  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.286  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/ui']
+2025-10-01 17:41:10.286  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.287  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/configuration/security']
+2025-10-01 17:41:10.287  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.287  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui.html']
+2025-10-01 17:41:10.287  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.289  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/webjars/**']
+2025-10-01 17:41:10.289  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.289  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2025-10-01 17:41:10.289  WARN 22092 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-10-01 17:41:10.289  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2025-10-01 17:41:10.327  INFO 22092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18fcfe7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ed0128b, org.springframework.security.web.context.SecurityContextPersistenceFilter@78d52d4c, org.springframework.security.web.header.HeaderWriterFilter@6a7cbeed, org.springframework.security.web.authentication.logout.LogoutFilter@1b1d93e9, br.com.tonypool.security.JwtSecurity@5319e4fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34907a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d426e01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b48361e, org.springframework.security.web.session.SessionManagementFilter@4a76c90, org.springframework.security.web.access.ExceptionTranslationFilter@29612ee2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@390e814c]
+2025-10-01 17:41:10.652  INFO 22092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-01 17:41:10.961  INFO 22092 --- [main] b.c.tonypool.AtendimentosapiApplication  : Started AtendimentosapiApplication in 5.525 seconds (JVM running for 6.359)
+2025-10-01 17:41:28.818  INFO 22092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01 17:41:28.818  INFO 22092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01 17:41:28.821  INFO 22092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

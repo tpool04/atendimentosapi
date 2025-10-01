@@ -17,4 +17,6 @@ public interface IProfissionalRepository extends CrudRepository<Profissional, In
 	@Query("select p from Profissional p join p.servicos s where s.idServico = :idServico")
 	List<Profissional> findByServicoId(@Param("idServico") Integer idServico);
 
+	Profissional findByTelefone(String telefone);
+
 }

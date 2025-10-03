@@ -9,8 +9,10 @@ import br.com.tonypool.entities.Servico;
 
 public interface IServicoRepository extends CrudRepository<Servico, Integer> {
 
-	@Query("select distinct s from Servico s join s.profissionais order by s.idServico")
+	@Query("select s from Servico s order by s.idServico")
 	public List<Servico> findAll();
 	
+	@Query("select distinct s from Servico s join fetch s.profissionais")
+    List<Servico> findAllWithProfissionais();
+	
 }
-

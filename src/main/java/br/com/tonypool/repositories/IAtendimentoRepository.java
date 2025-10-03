@@ -13,7 +13,7 @@ public interface IAtendimentoRepository extends CrudRepository<Atendimento, Inte
 	@Query("select a from Atendimento a join a.servico join a.profissional where a.cliente.idCliente = :param1")
 	public List<Atendimento> findByCliente(@Param("param1") Integer idCliente) throws Exception;
 
+	@Query("select a from Atendimento a where a.servico.idServico = :idServico")
+	List<Atendimento> findByServico(@Param("idServico") Integer idServico);
+
 }
-
-
-

@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -95,7 +96,7 @@ public class ProfissionaisController {
 
 	@PreAuthorize("hasRole('ADMIN')")
 	@CrossOrigin
-	@ApiOperation("Endpoint para alteração de profissional e seus serviços.")
+	@ApiOperation("Endpoint para alteração de profissional e seus serviços, sem alterar o preço do serviço.")
 	@PutMapping("/api/profissionais/{id}")
 	public ResponseEntity<br.com.tonypool.responses.ProfissionalDetalhadoResponse> alterarProfissional(
 	    @PathVariable Integer id,
@@ -107,17 +108,14 @@ public class ProfissionaisController {
 	            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
 	        }
 	        profissional.setNome(request.getNome());
-	        // Normaliza o telefone removendo espaços antes de salvar
 	        profissional.setTelefone(request.getTelefone() != null ? request.getTelefone().trim() : null);
-	        // Atualizar lista de serviços vinculados
 	        List<br.com.tonypool.entities.Servico> novosServicos = new ArrayList<>();
 	        List<br.com.tonypool.entities.Servico> servicosAntigos = profissional.getServicos() != null ? new ArrayList<>(profissional.getServicos()) : new ArrayList<>();
 	        if (request.getServicos() != null) {
 	            for (br.com.tonypool.requests.ServicoPutRequest servicoReq : request.getServicos()) {
 	                br.com.tonypool.entities.Servico servico = servicoRepository.findById(servicoReq.getIdServico()).orElse(null);
 	                if (servico != null) {
-	                    servico.setValor(servicoReq.getValor());
-	                    // Adiciona o profissional à lista de profissionais do serviço se não estiver
+	                    // Não altera o valor do serviço
 	                    if (servico.getProfissionais() == null) servico.setProfissionais(new ArrayList<>());
 	                    if (!servico.getProfissionais().contains(profissional)) {
 	                        servico.getProfissionais().add(profissional);
@@ -127,7 +125,6 @@ public class ProfissionaisController {
 	                }
 	            }
 	        }
-	        // Remover o profissional dos serviços que não estão mais associados
 	        for (br.com.tonypool.entities.Servico servicoAntigo : servicosAntigos) {
 	            if (!novosServicos.contains(servicoAntigo)) {
 	                if (servicoAntigo.getProfissionais() != null && servicoAntigo.getProfissionais().contains(profissional)) {
@@ -138,7 +135,6 @@ public class ProfissionaisController {
 	        }
 	        profissional.setServicos(novosServicos);
 	        profissionalRepository.save(profissional);
-	        // Montar resposta detalhada
 	        List<br.com.tonypool.responses.ServicoResponse> servicosResp = new ArrayList<>();
 	        for (br.com.tonypool.entities.Servico servico : profissional.getServicos()) {
 	            br.com.tonypool.responses.ServicoResponse s = new br.com.tonypool.responses.ServicoResponse();
@@ -234,5 +230,30 @@ public class ProfissionaisController {
 	    }
 	}
 
+	@PreAuthorize("hasRole('ADMIN')")
+    @CrossOrigin
+    @ApiOperation("Endpoint para exclusão de profissional.")
+    @DeleteMapping("/api/profissionais/{id}")
+    public ResponseEntity<Void> excluirProfissional(@PathVariable Integer id) {
+        try {
+            Profissional profissional = profissionalRepository.findById(id).orElse(null);
+            if (profissional == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            }
+            // Remove o profissional dos serviços vinculados
+            if (profissional.getServicos() != null) {
+                for (Servico servico : profissional.getServicos()) {
+                    if (servico.getProfissionais() != null) {
+                        servico.getProfissionais().remove(profissional);
+                        servicoRepository.save(servico);
+                    }
+                }
+            }
+            profissionalRepository.deleteById(id);
+            return ResponseEntity.noContent().build();
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
 
 }

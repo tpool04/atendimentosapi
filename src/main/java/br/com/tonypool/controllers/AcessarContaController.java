@@ -78,7 +78,7 @@ public class AcessarContaController {
 	private br.com.tonypool.services.TwoFactorAuthService twoFactorAuthService;
 
 	@ApiOperation("Endpoint para confirmar o código 2FA e gerar token.")
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = {"http://localhost:4200", "https://atendimentosweb.onrender.com"})
 	@PostMapping("/api/confirmar-2fa")
 	public ResponseEntity<AcessarContaPostDTO> confirmar2FA(@RequestBody Confirmar2FARequest request) {
         try {
